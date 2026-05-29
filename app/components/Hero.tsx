@@ -10,7 +10,7 @@ export default function Hero() {
 
       const scrollY = window.scrollY;
 
-      const video = document.querySelector(".background-video");
+      const video = document.querySelector(".background-video") as HTMLVideoElement | null;
 
       if (video) {
 
