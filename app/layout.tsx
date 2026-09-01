@@ -1,5 +1,6 @@
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: "AUTHENTIC INFOSYSTEM",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );
